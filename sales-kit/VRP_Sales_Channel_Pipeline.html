@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vanscoy Rare Pharmacy — Sales Channel & Pipeline | Head of Sales Handoff</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+  :root {
+    --ink: #12181f;
+    --ink-soft: #2a3441;
+    --muted: #5c6b7a;
+    --line: #d7dde4;
+    --paper: #f7f5f1;
+    --white: #ffffff;
+    --steel: #1f4b6e;
+    --steel-deep: #163651;
+    --accent: #0e7c6b;
+    --accent-soft: #e6f4f1;
+    --warn: #9a3412;
+    --warn-soft: #fff1e8;
+    --stage: #eef2f6;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    color: var(--ink);
+    background:
+      radial-gradient(1200px 600px at 10% -10%, #e8eef4 0%, transparent 55%),
+      radial-gradient(900px 500px at 100% 0%, #e7f2ef 0%, transparent 50%),
+      var(--paper);
+    font-family: "IBM Plex Sans", sans-serif;
+    line-height: 1.55;
+    font-size: 15.5px;
+  }
+
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 32px 28px 80px; }
+
+  /* Cover */
+  .cover {
+    min-height: calc(100vh - 64px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--line);
+    background: linear-gradient(160deg, #102536 0%, #1f4b6e 48%, #0f3d45 100%);
+    color: #f4f7fa;
+    padding: 48px 48px 40px;
+    margin-bottom: 48px;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(115deg, transparent 40%, rgba(255,255,255,0.05) 40.5%, transparent 41%),
+      linear-gradient(115deg, transparent 62%, rgba(14,124,107,0.18) 62.5%, transparent 63%);
+    pointer-events: none;
+  }
+  .cover-top, .cover-mid, .cover-bot { position: relative; z-index: 1; }
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #9fc0d4;
+    margin: 0 0 28px;
+  }
+  .brand {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(42px, 7vw, 72px);
+    line-height: 0.95;
+    font-weight: 600;
+    margin: 0 0 18px;
+    letter-spacing: -0.02em;
+  }
+  .cover h1 {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(28px, 4.2vw, 40px);
+    font-weight: 500;
+    line-height: 1.15;
+    margin: 0 0 16px;
+    max-width: 16ch;
+    color: #fff;
+  }
+  .cover-lead {
+    max-width: 52ch;
+    color: #d5e2eb;
+    font-size: 17px;
+    margin: 0;
+  }
+  .meta-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    border-top: 1px solid rgba(255,255,255,0.18);
+    padding-top: 22px;
+    margin-top: 48px;
+  }
+  .meta-grid div span {
+    display: block;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #9fc0d4;
+    margin-bottom: 6px;
+  }
+  .meta-grid div strong {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  /* Nav */
+  nav.toc {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(247,245,241,0.92);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--line);
+    padding: 12px 16px;
+    margin: -24px 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+  }
+  nav.toc a {
+    color: var(--steel);
+    text-decoration: none;
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  nav.toc a:hover { color: var(--accent); text-decoration: underline; }
+
+  section {
+    margin-bottom: 56px;
+    scroll-margin-top: 72px;
+  }
+  .section-label {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 10px;
+  }
+  h2 {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 32px;
+    line-height: 1.15;
+    margin: 0 0 12px;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+  }
+  h3 {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 22px;
+    margin: 28px 0 10px;
+    color: var(--ink);
+  }
+  h4 {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0 0 8px;
+    color: var(--steel-deep);
+    letter-spacing: 0.01em;
+  }
+  p { margin: 0 0 14px; color: var(--ink-soft); }
+  .lede { font-size: 17px; max-width: 70ch; color: var(--ink-soft); }
+
+  .callout {
+    border-left: 3px solid var(--accent);
+    background: var(--accent-soft);
+    padding: 16px 18px;
+    margin: 18px 0;
+  }
+  .callout p { margin: 0; color: var(--ink); }
+  .warn {
+    border-left: 3px solid var(--warn);
+    background: var(--warn-soft);
+    padding: 16px 18px;
+    margin: 18px 0;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .panel {
+    border-top: 2px solid var(--steel);
+    padding: 16px 0 8px;
+  }
+  .panel p:last-child { margin-bottom: 0; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+    margin: 16px 0 8px;
+    background: var(--white);
+  }
+  th, td {
+    border: 1px solid var(--line);
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: var(--steel-deep);
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+  }
+  tr:nth-child(even) td { background: #fbfcfd; }
+  td.mono, th.mono { font-family: "IBM Plex Mono", monospace; font-size: 12px; }
+
+  .stage-row {
+    display: grid;
+    grid-template-columns: 90px 1fr 110px 90px;
+    gap: 12px;
+    align-items: start;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .stage-row:first-of-type { border-top: 1px solid var(--line); }
+  .stage-code {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--steel);
+  }
+  .stage-prob {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  ul.clean { margin: 8px 0 16px; padding-left: 18px; color: var(--ink-soft); }
+  ul.clean li { margin-bottom: 6px; }
+  ol.clean { margin: 8px 0 16px; padding-left: 20px; color: var(--ink-soft); }
+  ol.clean li { margin-bottom: 8px; }
+
+  .kpi-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    margin: 20px 0;
+  }
+  .kpi-strip > div {
+    background: var(--white);
+    padding: 18px 16px;
+  }
+  .kpi-strip strong {
+    display: block;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 26px;
+    color: var(--steel-deep);
+    margin-bottom: 4px;
+  }
+  .kpi-strip span {
+    font-size: 12.5px;
+    color: var(--muted);
+  }
+
+  .quote {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 20px;
+    line-height: 1.35;
+    color: var(--ink);
+    margin: 20px 0;
+    max-width: 48ch;
+  }
+  .quote cite {
+    display: block;
+    margin-top: 10px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    color: var(--muted);
+  }
+
+  footer.doc-foot {
+    border-top: 1px solid var(--line);
+    padding-top: 20px;
+    color: var(--muted);
+    font-size: 12.5px;
+  }
+
+  .tag {
+    display: inline-block;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    padding: 2px 7px;
+    background: var(--stage);
+    color: var(--steel-deep);
+    margin-right: 4px;
+  }
+
+  @media (max-width: 820px) {
+    .wrap { padding: 20px 16px 56px; }
+    .cover { padding: 28px 22px; min-height: auto; }
+    .meta-grid, .grid-2, .grid-3, .kpi-strip { grid-template-columns: 1fr 1fr; }
+    .stage-row { grid-template-columns: 1fr; gap: 4px; }
+  }
+  @media (max-width: 540px) {
+    .meta-grid, .grid-2, .grid-3, .kpi-strip { grid-template-columns: 1fr; }
+  }
+  @media print {
+    body { background: #fff; font-size: 11.5pt; }
+    .cover { min-height: auto; break-after: page; }
+    nav.toc { display: none; }
+    section { break-inside: avoid; }
+    table { font-size: 10pt; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- COVER -->
+  <header class="cover">
+    <div class="cover-top">
+      <p class="eyebrow">Confidential — Head of Sales Handoff Package</p>
+      <p class="brand">Vanscoy Rare</p>
+      <h1>Sales Channel &amp; Pipeline Operating System</h1>
+      <p class="cover-lead">A go-to-market system for sourcing exclusive and limited-distribution rare therapy business, built for institutional execution toward a $1B revenue trajectory.</p>
+    </div>
+    <div class="cover-bot">
+      <div class="meta-grid">
+        <div>
+          <span>Entity</span>
+          <strong>Vanscoy Rare Pharmacy (VRP)</strong>
+        </div>
+        <div>
+          <span>HQ</span>
+          <strong>Pittsburgh, PA</strong>
+        </div>
+        <div>
+          <span>Primary Motion</span>
+          <strong>Manufacturer LDD / Exclusive SP</strong>
+        </div>
+        <div>
+          <span>Version</span>
+          <strong>2026.07 — Working Draft</strong>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="Document sections">
+    <a href="#brief">01 Brief</a>
+    <a href="#thesis">02 Market Thesis</a>
+    <a href="#icp">03 ICP &amp; Segments</a>
+    <a href="#channels">04 Channels</a>
+    <a href="#pipeline">05 Pipeline</a>
+    <a href="#math">06 $1B Math</a>
+    <a href="#targets">07 Target Book</a>
+    <a href="#plays">08 Plays &amp; Messaging</a>
+    <a href="#ops">09 Operating Cadence</a>
+    <a href="#handoff">10 30-60-90</a>
+  </nav>
+
+  <!-- 01 -->
+  <section id="brief">
+    <p class="section-label">01 — Executive Brief</p>
+    <h2>What this package is for</h2>
+    <p class="lede">This is a ready-to-run commercial operating system for VRP’s head of sales / business development lead. It defines who we sell to, how we source demand, how opportunities move, and how the book compounds toward institutional scale.</p>
+
+    <div class="kpi-strip">
+      <div><strong>Exclusive SP</strong><span>Primary offer: rare therapy commercialization + dispensing</span></div>
+      <div><strong>Hub-integrated</strong><span>SP + patient services under one roof</span></div>
+      <div><strong>Independence</strong><span>No PBM conflict — manufacturer-aligned</span></div>
+      <div><strong>Pittsburgh DNA</strong><span>Lineage: PANTHERx → RareMed → VRP</span></div>
+    </div>
+
+    <div class="grid-2">
+      <div class="panel">
+        <h4>Commercial mandate</h4>
+        <p>Win exclusive and tightly limited specialty pharmacy designations from biopharma launching or repositioning rare / orphan therapies. Expand wallet share via hub-adjacent services, data, and launch consulting.</p>
+      </div>
+      <div class="panel">
+        <h4>Why VRP wins</h4>
+        <p>Independence + rare-only focus + executive-level program design + vIMPACT / RarePath-class technology + proven launch muscle from the same leadership that defined rare pharmacy in Pittsburgh.</p>
+      </div>
+    </div>
+
+    <p class="quote">“When selecting a specialty pharmacy I am a big believer in the jockey and not the horse.”
+      <cite>— Life sciences partner, vanscoyrare.com</cite>
+    </p>
+
+    <div class="callout">
+      <p><strong>Lineage context for sales conversations:</strong> Dr. Tim Davis and Dr. Gordon Vanscoy built PANTHERx Rare; RareMed advanced patient-services / hub leadership; Vanscoy Rare Pharmacy (VRP, founded 2023) is the independent rare pharmacy platform now competing for exclusive distribution. Public wins include exclusive SP for Redemplo® (plozasiran / FCS) and Cycle Pharmaceuticals’ VENXXIVA.</p>
+    </div>
+  </section>
+
+  <!-- 02 -->
+  <section id="thesis">
+    <p class="section-label">02 — Market Thesis</p>
+    <h2>Where the money moves</h2>
+    <p class="lede">Rare disease distribution is not a volume game. Manufacturers buy control: clinical depth, clean data, patient experience, and a pharmacy that will not dilute their brand inside a PBM machine.</p>
+
+    <div class="grid-3">
+      <div class="panel">
+        <h4>Structural tailwind</h4>
+        <p>~Half of recent novel FDA approvals carry orphan designation. Exclusive / limited networks cover roughly one-third of specialty drugs. Independents dominate exclusive rare networks.</p>
+      </div>
+      <div class="panel">
+        <h4>Buying moment</h4>
+        <p>Network selection typically locks 12–24 months pre-launch (Phase 3 / BLA-NDA planning). Late-cycle chase loses to incumbents already embedded with the brand team.</p>
+      </div>
+      <div class="panel">
+        <h4>Competitive set</h4>
+        <p>Primary independents: PANTHERx Rare, Orsini, AnovoRx, Optime Care / AscellaHealth, Biologics by McKesson. PBM SPs win broader networks; VRP wins exclusivity on rare.</p>
+      </div>
+    </div>
+
+    <h3>Offer architecture (what we sell)</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Offer</th>
+          <th>Buyer problem</th>
+          <th>VRP answer</th>
+          <th>Commercial value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Exclusive Distribution</strong></td>
+          <td>Need one accountable SP for ultra-rare launch</td>
+          <td>Single-pharmacy LDD with concierge ops</td>
+          <td>Highest ACV; multi-year franchise</td>
+        </tr>
+        <tr>
+          <td><strong>Limited Network (2–4)</strong></td>
+          <td>Need clinical depth + some payer coverage optionality</td>
+          <td>Preferred / limited slot with superior KPIs</td>
+          <td>High volume share; competitive retention</td>
+        </tr>
+        <tr>
+          <td><strong>Integrated SP + Hub</strong></td>
+          <td>Too many vendors fragmenting journey &amp; data</td>
+          <td>One-stop commercialization concierge</td>
+          <td>Stickiness; expansion revenue</td>
+        </tr>
+        <tr>
+          <td><strong>Data / vIMPACT</strong></td>
+          <td>Blind spots on access, adherence, HCP friction</td>
+          <td>Rare-specific care platform + TranSParency™</td>
+          <td>Differentiation in RFP scoring</td>
+        </tr>
+        <tr>
+          <td><strong>Launch &amp; Strategy Consulting</strong></td>
+          <td>Lean commercial team, first orphan launch</td>
+          <td>Executive-led program design</td>
+          <td>Door-opener; converts to exclusive</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 03 -->
+  <section id="icp">
+    <p class="section-label">03 — Ideal Customer Profile</p>
+    <h2>Who we pursue — and who we skip</h2>
+
+    <h3>Primary ICP (A-tier)</h3>
+    <ul class="clean">
+      <li><strong>Company:</strong> Emerging / mid-size biopharma with ≥1 orphan or ultra-orphan asset in Phase 3, NDA/BLA, or first 24 months post-approval.</li>
+      <li><strong>Product:</strong> Rare / orphan indication; specialty dispensing suitable for mail-order or high-touch SP; cold-chain OK; patient population typically &lt;10,000 U.S. (often &lt;1,000).</li>
+      <li><strong>Channel intent:</strong> Considering exclusive or limited (≤4) specialty pharmacy network; values independence from PBM ownership.</li>
+      <li><strong>Buying committee:</strong> VP/Head of Market Access, Patient Services / Hub Lead, Brand / Commercial Lead, Trade / Distribution, Medical Affairs (influence), Procurement / Legal (late).</li>
+      <li><strong>Trigger events:</strong> Positive Phase 3, PDUFA date set, new CCO/CCO commercial hire, prior SP underperformance, hub transition RFP, indication expansion, competitor SP M&amp;A / service issues.</li>
+    </ul>
+
+    <h3>Secondary ICP (B-tier)</h3>
+    <ul class="clean">
+      <li>Larger pharma orphan franchise teams seeking a high-touch independent alongside a PBM SP.</li>
+      <li>Manufacturers needing non-commercial / bridge / PAP adjacency (route through RareMed partnership narrative when appropriate).</li>
+      <li>International biotechs entering U.S. commercial for the first time with lean access teams.</li>
+    </ul>
+
+    <h3>Disqualify / deprioritize</h3>
+    <ul class="clean">
+      <li>High-volume specialty (e.g., broad immunology) where PBM network inclusion is non-negotiable and exclusive is impossible.</li>
+      <li>Retail / open-network oral generics without rare support needs.</li>
+      <li>Opportunities where sole decision criterion is lowest dispensing fee with no clinical/data weighting.</li>
+    </ul>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Segment</th>
+          <th>Example profile</th>
+          <th>Primary offer</th>
+          <th>Sales cycle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="tag">S1</span> Ultra-orphan launch</td>
+          <td>First commercial product; &lt;500 U.S. patients</td>
+          <td>Exclusive SP + launch design</td>
+          <td>6–14 months</td>
+        </tr>
+        <tr>
+          <td><span class="tag">S2</span> Orphan franchise expansion</td>
+          <td>2nd+ indication or line extension</td>
+          <td>Exclusive or limited network</td>
+          <td>4–9 months</td>
+        </tr>
+        <tr>
+          <td><span class="tag">S3</span> Hub / SP consolidation</td>
+          <td>Incumbent underperforming; RFP open</td>
+          <td>Integrated SP + hub</td>
+          <td>3–8 months</td>
+        </tr>
+        <tr>
+          <td><span class="tag">S4</span> U.S. market entry</td>
+          <td>EU/UK/JP biotech, first U.S. rare launch</td>
+          <td>Exclusive + consulting</td>
+          <td>8–16 months</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 04 -->
+  <section id="channels">
+    <p class="section-label">04 — Sales Channels</p>
+    <h2>How demand is sourced</h2>
+    <p class="lede">VRP does not win exclusive rare pharmacy by cold volume. The channel mix must be relationship-dense, launch-calendar-aware, and executive-led.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="width:18%">Channel</th>
+          <th style="width:22%">Role</th>
+          <th>Operating method</th>
+          <th style="width:14%">Owner</th>
+          <th style="width:12%">Target mix</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>C1. Named Account Hunting</strong></td>
+          <td>Core pipeline creation</td>
+          <td>Maintain living book of 75–120 orphan assets 12–30 months from launch. Map buying committee. Executive intro → clinical deep-dive → RFP / sole-source.</td>
+          <td>HoS / BD</td>
+          <td>40%</td>
+        </tr>
+        <tr>
+          <td><strong>C2. Conference &amp; Congress</strong></td>
+          <td>Compressed deal velocity</td>
+          <td>Asembia Specialty Pharmacy Summit, NASP, BIO, World Orphan Drug Congress USA, disease-specific congresses. Pre-book 20–30 meetings; post-event 48-hour follow-up SLA.</td>
+          <td>BD + Exec</td>
+          <td>20%</td>
+        </tr>
+        <tr>
+          <td><strong>C3. Advisor / Referral Network</strong></td>
+          <td>Warm exclusive intros</td>
+          <td>Former brand / access leaders, rare disease KOLs, channel consultants, law firms advising launch, RareMed cross-referrals where conflict-free.</td>
+          <td>CEO / Board / HoS</td>
+          <td>15%</td>
+        </tr>
+        <tr>
+          <td><strong>C4. Inbound Thought Leadership</strong></td>
+          <td>Authority &amp; shortlist inclusion</td>
+          <td>Launch playbooks, exclusive-distribution briefs, case studies (Redemplo, VENXXIVA), LinkedIn executive POV, partnerships@vanscoyrare.com response &lt;4 business hours.</td>
+          <td>Marketing + BD</td>
+          <td>10%</td>
+        </tr>
+        <tr>
+          <td><strong>C5. Competitive Displacement</strong></td>
+          <td>Mid-lifecycle wins</td>
+          <td>Monitor SP service failures, accreditation gaps, data complaints, M&amp;A disruption. Offer transition playbooks with zero patient-drop design.</td>
+          <td>BD + Ops</td>
+          <td>10%</td>
+        </tr>
+        <tr>
+          <td><strong>C6. Ecosystem Partners</strong></td>
+          <td>Multiplied coverage</td>
+          <td>3PL, hub tech, PAP foundations, specialty distributors, rare advocacy groups (non-promotional education), Pittsburgh / UPMC / Pitt pharmacy network.</td>
+          <td>Strategy</td>
+          <td>5%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Annual channel calendar (anchor events)</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Timing</th>
+          <th>Event / motion</th>
+          <th>Objective</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Q1</td><td>Asembia planning + Q1 named-account blitz</td><td>Fill Stage 1–2; lock H1 meeting slate</td></tr>
+        <tr><td>Spring</td><td>Asembia Specialty Pharmacy Summit</td><td>Highest-density manufacturer meetings of the year</td></tr>
+        <tr><td>Q2</td><td>BIO International / World Orphan Drug Congress</td><td>Emerging biotech + EU U.S.-entry pipeline</td></tr>
+        <tr><td>Q3</td><td>NASP Annual Meeting + mid-year pipeline scrub</td><td>Advance Stage 3–5; prune dead weight</td></tr>
+        <tr><td>Q4</td><td>Launch-readiness close cycle + next-year book build</td><td>Contract closes; 12–24 month target rebuild</td></tr>
+        <tr><td>Ongoing</td><td>PDUFA / AdCom watchlist (weekly)</td><td>Trigger-based outreach within 5 days of catalyst</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 05 -->
+  <section id="pipeline">
+    <p class="section-label">05 — Pipeline System</p>
+    <h2>Stages, exit criteria, and forecast rules</h2>
+    <p class="lede">One pipeline. One owner per opportunity. No “happy ears” stages. Probability weights are conservative by design for rare SP cycles.</p>
+
+    <div class="stage-row">
+      <div class="stage-code">S0 · 5%</div>
+      <div>
+        <h4>Target Identified</h4>
+        <p>Asset + company fit ICP. Buying committee mapped (≥2 contacts). Trigger or timing thesis documented. Not yet a live conversation.</p>
+      </div>
+      <div class="stage-prob">Exit: first live mtg</div>
+      <div class="stage-prob">Age max: 60d</div>
+    </div>
+    <div class="stage-row">
+      <div class="stage-code">S1 · 10%</div>
+      <div>
+        <h4>Discovery</h4>
+        <p>Qualified need: network design undecided or open; timeline confirmed; economic buyer identified. Pain / success metrics captured.</p>
+      </div>
+      <div class="stage-prob">Exit: mutual agenda</div>
+      <div class="stage-prob">Age max: 45d</div>
+    </div>
+    <div class="stage-row">
+      <div class="stage-code">S2 · 20%</div>
+      <div>
+        <h4>Solution Design</h4>
+        <p>Clinical / ops / data deep-dive completed. Draft program scope. Competitive alternatives known. Champion engaged.</p>
+      </div>
+      <div class="stage-prob">Exit: RFP or sole-source path</div>
+      <div class="stage-prob">Age max: 60d</div>
+    </div>
+    <div class="stage-row">
+      <div class="stage-code">S3 · 40%</div>
+      <div>
+        <h4>Formal Evaluation</h4>
+        <p>RFP response, capabilities presentation, or sole-source diligence. References offered. Security / compliance review started.</p>
+      </div>
+      <div class="stage-prob">Exit: shortlist / BAFO</div>
+      <div class="stage-prob">Age max: 75d</div>
+    </div>
+    <div class="stage-row">
+      <div class="stage-code">S4 · 60%</div>
+      <div>
+        <h4>Verbal / Preferred</h4>
+        <p>Preferred partner signal from economic buyer or selection committee. Contracting opened. Implementation scoping begun.</p>
+      </div>
+      <div class="stage-prob">Exit: redlines exchanged</div>
+      <div class="stage-prob">Age max: 45d</div>
+    </div>
+    <div class="stage-row">
+      <div class="stage-code">S5 · 80%</div>
+      <div>
+        <h4>Contracting</h4>
+        <p>MSA / SOW / distribution agreement in legal. Only commercial or legal issues remain. Launch / transition date set.</p>
+      </div>
+      <div class="stage-prob">Exit: signature</div>
+      <div class="stage-prob">Age max: 60d</div>
+    </div>
+    <div class="stage-row">
+      <div class="stage-code">S6 · 100%</div>
+      <div>
+        <h4>Closed-Won</h4>
+        <p>Fully executed. Implementation owned by ops. BD retains QBR relationship for expansion.</p>
+      </div>
+      <div class="stage-prob">Exit: go-live</div>
+      <div class="stage-prob">—</div>
+    </div>
+
+    <h3>Required CRM fields (every opportunity)</h3>
+    <table>
+      <thead>
+        <tr><th>Field</th><th>Why it matters</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Manufacturer / Asset / Indication / NDA-BLA or PDUFA date</td><td>Timing accuracy</td></tr>
+        <tr><td>Network type sought (Exclusive / Limited / Open)</td><td>Offer fit &amp; ACV model</td></tr>
+        <tr><td>Est. U.S. addressable patients (Y1 / Peak)</td><td>Revenue model</td></tr>
+        <tr><td>Est. WAC or net therapy value (band)</td><td>Gross revenue potential</td></tr>
+        <tr><td>Economic buyer + champion + blockers</td><td>MEDDICC hygiene</td></tr>
+        <tr><td>Competitors in evaluation</td><td>Battlecard selection</td></tr>
+        <tr><td>Next step + next-step date (mandatory)</td><td>Forecast integrity</td></tr>
+        <tr><td>Weighted ACV (gross product + fees)</td><td>Board reporting</td></tr>
+      </tbody>
+    </table>
+
+    <div class="warn">
+      <p><strong>Forecast rule:</strong> An opportunity without a dated next step older than 14 days is automatically marked <em>At Risk</em>. At Risk for 30 days → slide to prior stage or Close-Lost with reason code. No zombie pipeline.</p>
+    </div>
+  </section>
+
+  <!-- 06 -->
+  <section id="math">
+    <p class="section-label">06 — Path to $1B</p>
+    <h2>Portfolio math leadership can run</h2>
+    <p class="lede">In rare specialty pharmacy, reported revenue is dominated by product pass-through. Scale is a function of exclusive / high-share rare franchises on the shelf — not logo count alone.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Product archetype</th>
+          <th>Illustrative peak U.S. patients</th>
+          <th>Illustrative annual therapy value</th>
+          <th>Exclusive SP gross revenue band</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ultra-orphan</td>
+          <td>50 – 300</td>
+          <td>$300K – $750K+</td>
+          <td>$15M – $150M</td>
+        </tr>
+        <tr>
+          <td>Orphan (narrow)</td>
+          <td>300 – 1,500</td>
+          <td>$150K – $400K</td>
+          <td>$50M – $400M</td>
+        </tr>
+        <tr>
+          <td>Broader rare / specialty orphan</td>
+          <td>1,500 – 8,000</td>
+          <td>$80K – $250K</td>
+          <td>$150M – $800M+</td>
+        </tr>
+        <tr>
+          <td>Limited-network share (25–40%)</td>
+          <td>Varies</td>
+          <td>Varies</td>
+          <td>Pro-rata of above</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Illustrative book to ~$1B gross revenue</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Portfolio mix (example)</th>
+          <th>Count</th>
+          <th>Avg contribution</th>
+          <th>Subtotal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Anchor exclusive franchises (larger orphan)</td><td>2</td><td>$250M</td><td>$500M</td></tr>
+        <tr><td>Core exclusive / high-share orphans</td><td>4</td><td>$80M</td><td>$320M</td></tr>
+        <tr><td>Ultra-orphan exclusives</td><td>6</td><td>$25M</td><td>$150M</td></tr>
+        <tr><td>Limited-network / expansion products</td><td>8–12</td><td>$5–15M</td><td>$80M+</td></tr>
+        <tr><td><strong>Total</strong></td><td><strong>~20–24 active therapies</strong></td><td>—</td><td><strong>~$1.05B</strong></td></tr>
+      </tbody>
+    </table>
+
+    <div class="callout">
+      <p><strong>Operating implication:</strong> The sales team is not chasing hundreds of small logos. It is building and converting a curated book of ~80–120 high-fit assets so that 8–12 exclusive / high-share wins land over a multi-year compounding cycle — with ruthless stage discipline.</p>
+    </div>
+
+    <h3>Leading indicators (manage weekly)</h3>
+    <div class="grid-3">
+      <div class="panel">
+        <h4>Coverage</h4>
+        <p>≥90 ICP accounts with named owner; ≥60% with economic-buyer contact; ≥40 active opportunities in S1+.</p>
+      </div>
+      <div class="panel">
+        <h4>Conversion</h4>
+        <p>S1→S3 ≥35%; S3→S5 ≥40%; Close-Won rate on shortlisted RFPs ≥30%.</p>
+      </div>
+      <div class="panel">
+        <h4>Velocity</h4>
+        <p>Median days S1→S4 ≤150; next-step hygiene ≥95%; aged &gt; stage max &lt;10% of book.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 -->
+  <section id="targets">
+    <p class="section-label">07 — Target Book Framework</p>
+    <h2>How to build the working account list</h2>
+    <p>Use the accompanying CSV (<code>data/target-account-framework.csv</code>) as the living book. Seed categories below; BD refreshes monthly from clinical calendars, FDA, and conference intelligence.</p>
+
+    <h3>Priority lanes</h3>
+    <ol class="clean">
+      <li><strong>Lane A — Pre-launch exclusives (highest ROI):</strong> Orphan assets with PDUFA / expected approval inside 18 months; no SP locked.</li>
+      <li><strong>Lane B — Recent approvals without sticky exclusive:</strong> Therapies in limited networks where VRP can still earn a seat or displace underperformers.</li>
+      <li><strong>Lane C — Franchise adjacency:</strong> Manufacturers who already trust the Vanscoy / Davis / RareMed ecosystem for patient services and need commercial SP.</li>
+      <li><strong>Lane D — U.S. entry biotechs:</strong> Ex-U.S. companies with first rare asset; consulting-led land then exclusive expand.</li>
+    </ol>
+
+    <h3>Proof points to lead with (public)</h3>
+    <ul class="clean">
+      <li>Exclusive specialty pharmacy for <strong>Redemplo® (plozasiran)</strong> — familial chylomicronemia syndrome (FCS).</li>
+      <li>Exclusive pharmacy partner for Cycle Pharmaceuticals’ <strong>VENXXIVA</strong> (tiopronin DR) — cystinuria.</li>
+      <li>Triple-accredited independent rare pharmacy; Pittsburgh HQ; executive team with PANTHERx + RareMed launch DNA.</li>
+      <li>Integrated SP + patient services mindset; vIMPACT / RarePath technology story; TranSParency™ data posture.</li>
+    </ul>
+
+    <h3>Buyer map (roles to cover)</h3>
+    <table>
+      <thead>
+        <tr><th>Role</th><th>What they care about</th><th>VRP proof</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Head of Market Access / Channel</td><td>Network design, payer friction, time-to-therapy</td><td>Reimbursement expertise; national fulfillment</td></tr>
+        <tr><td>Patient Services / Hub Lead</td><td>Journey continuity, PAPs, adherence</td><td>Integrated SP+hub model; case management depth</td></tr>
+        <tr><td>Brand / General Manager</td><td>Launch curve, HCP experience, differentiation</td><td>Concierge commercialization; references</td></tr>
+        <tr><td>Trade / Distribution</td><td>Cold chain, inventory, 50-state licensure</td><td>Ambient / cold-chain packouts; overnight capable</td></tr>
+        <tr><td>Compliance / Quality</td><td>REMS, AE reporting, accreditation</td><td>Multi-accreditation; pharmacovigilance support</td></tr>
+        <tr><td>Data / Insights</td><td>Granularity, latency, transparency</td><td>Custom KPIs; real-time access narrative</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 08 -->
+  <section id="plays">
+    <p class="section-label">08 — Plays &amp; Messaging</p>
+    <h2>Standard plays the team runs every week</h2>
+
+    <h3>Play A — Pre-launch exclusive lock</h3>
+    <ol class="clean">
+      <li>Identify asset 12–24 months pre-approval.</li>
+      <li>Executive-to-executive intro (Gordon / Tim / Justin as appropriate).</li>
+      <li>Disease-state working session (clinical + access).</li>
+      <li>Draft exclusive distribution blueprint + KPI scorecard.</li>
+      <li>Sole-source preference memo for manufacturer internal use.</li>
+      <li>Contract → implementation war-room → launch day excellence.</li>
+    </ol>
+
+    <h3>Play B — RFP win</h3>
+    <ol class="clean">
+      <li>Qualify: is exclusive/limited real, or checkbox theater?</li>
+      <li>Assemble tiger team (BD, clinical, ops, data, quality).</li>
+      <li>Lead with jockey narrative + independence + rare-only focus.</li>
+      <li>Submit crisp RFP; offer live scenario simulation.</li>
+      <li>Reference calls staged by therapeutic adjacency.</li>
+      <li>BAFO only if strategic; do not race to bottom on fees.</li>
+    </ol>
+
+    <h3>Play C — Displacement / transition</h3>
+    <ol class="clean">
+      <li>Document incumbent failure modes (data, adherence, HCP complaints).</li>
+      <li>Present zero-disruption transition plan (phased, patient-level).</li>
+      <li>Offer parallel operations window; protect PAP / bridge continuity.</li>
+      <li>Close on risk removal, not price.</li>
+    </ol>
+
+    <h3>Core narrative (30 seconds)</h3>
+    <div class="callout">
+      <p>Vanscoy Rare is the independent rare pharmacy built by the people who defined rare pharmacy. We give manufacturers exclusive-grade control — clinical depth, clean data, and patient-first execution — without PBM conflict. If the therapy is rare, the pharmacy should be too.</p>
+    </div>
+
+    <h3>Competitive positioning (high level)</h3>
+    <table>
+      <thead>
+        <tr><th>Competitor type</th><th>Their pitch</th><th>VRP counter</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PBM-owned SP</td><td>Scale, formulary reach</td><td>Conflicted incentives; diluted rare focus; weaker exclusive data control</td>
+        </tr>
+        <tr>
+          <td>Large independent rare SP</td><td>Portfolio breadth, brand recognition</td>
+          <td>VRP: true independence, executive access, agility, founder-level accountability</td>
+        </tr>
+        <tr>
+          <td>Hub-only vendors</td><td>Patient services expertise</td>
+          <td>Fragmented when SP is separate; VRP unifies commercialization</td>
+        </tr>
+        <tr>
+          <td>Broad specialty pharmacies</td><td>Price / capacity</td>
+          <td>Wrong operating system for ultra-rare; patients feel the difference</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Objection handling (short)</h3>
+    <table>
+      <thead>
+        <tr><th>Objection</th><th>Response</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>“You’re newer than PANTHERx / Orsini.”</td><td>The team isn’t. Same rare DNA, purpose-built independent platform — with proof in live exclusive launches.</td></tr>
+        <tr><td>“We need a PBM SP in network.”</td><td>For mass specialty, maybe. For ultra-rare exclusive, manufacturers increasingly choose independents for control. We can discuss hybrid designs when clinically warranted.</td></tr>
+        <tr><td>“Show me technology.”</td><td>Walk vIMPACT / RarePath workflows, KPI dashboards, TranSParency™ reporting samples under NDA.</td></tr>
+        <tr><td>“Can you scale if we explode?”</td><td>Present licensing footprint, cold-chain, staffing model, and Rapid Scaling playbook from strategy consulting menu.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 09 -->
+  <section id="ops">
+    <p class="section-label">09 — Operating Cadence</p>
+    <h2>How the sales team runs the business</h2>
+
+    <div class="grid-2">
+      <div class="panel">
+        <h4>Weekly (60–90 min)</h4>
+        <ul class="clean">
+          <li>Pipeline scrub by stage (oldest first)</li>
+          <li>Next-step hygiene audit</li>
+          <li>Trigger watchlist (PDUFA, AdCom, press)</li>
+          <li>Conference meeting conversion review</li>
+          <li>At-Risk deal deep dive (max 3)</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h4>Monthly (half-day)</h4>
+        <ul class="clean">
+          <li>Book rebuild: add/drop ICP accounts</li>
+          <li>Win/loss review with coded reasons</li>
+          <li>Channel mix vs. target %</li>
+          <li>Capacity check with Pharmacy Ops</li>
+          <li>Board-ready forecast (weighted + commit)</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Roles (RACI lite)</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Motion</th>
+          <th>Accountable</th>
+          <th>Responsible</th>
+          <th>Consulted</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Named account strategy</td><td>Head of Sales / BD</td><td>BD team</td><td>Strategy (Gannon), Exec Board</td></tr>
+        <tr><td>Executive relationship</td><td>CEO / Exec Board</td><td>Assigned exec sponsor</td><td>BD</td></tr>
+        <tr><td>RFP / capabilities</td><td>BD lead</td><td>BD + Clinical + Ops + Data</td><td>Quality / Compliance</td></tr>
+        <tr><td>Contracting</td><td>BD lead</td><td>Legal + Finance</td><td>Ops (SOW feasibility)</td></tr>
+        <tr><td>Implementation</td><td>Ops / Pharmacy leadership</td><td>Program team</td><td>BD (client continuity)</td></tr>
+        <tr><td>Expansion / QBR</td><td>BD lead</td><td>Account owner</td><td>Clinical + Data</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Tools</h3>
+    <ul class="clean">
+      <li><strong>CRM:</strong> Single opportunity pipeline with stages above (HubSpot / Salesforce — pick one; no spreadsheets as system of record).</li>
+      <li><strong>Watchlist:</strong> FDA calendar + Evaluate / Citeline / BioPharmCatalyst-style alerts for orphan catalysts.</li>
+      <li><strong>Collateral:</strong> Manufacturer one-pager, exclusive distribution brief, launch readiness checklist, redacted KPI sample, security package.</li>
+      <li><strong>Inbound:</strong> partnerships@vanscoyrare.com with 4-hour business response SLA and auto-CRM create.</li>
+    </ul>
+  </section>
+
+  <!-- 10 -->
+  <section id="handoff">
+    <p class="section-label">10 — Head of Sales 30 / 60 / 90</p>
+    <h2>Immediate execution plan</h2>
+
+    <h3>Days 1–30 — Install the system</h3>
+    <ul class="clean">
+      <li>Adopt this stage model and CRM fields; purge ambiguous deals.</li>
+      <li>Stand up the 100-account target book across Lanes A–D.</li>
+      <li>Assign executive sponsors to top 25 accounts.</li>
+      <li>Finalize Asembia / next major meeting target list (20–30 named).</li>
+      <li>Publish internal battlecards for top 4 competitor types.</li>
+    </ul>
+
+    <h3>Days 31–60 — Fill the top of funnel</h3>
+    <ul class="clean">
+      <li>Complete discovery meetings with ≥40 ICP accounts.</li>
+      <li>Advance ≥15 opportunities to S2+.</li>
+      <li>Ship two pieces of manufacturer-facing thought leadership.</li>
+      <li>Run first formal win/loss retro on any active RFP.</li>
+      <li>Align Pharmacy Ops capacity model to weighted pipeline.</li>
+    </ul>
+
+    <h3>Days 61–90 — Create commit visibility</h3>
+    <ul class="clean">
+      <li>Produce a board commit forecast with path to annual plan.</li>
+      <li>Have ≥5 opportunities in S4–S5 (preferred / contracting).</li>
+      <li>Close or kill aged S1–S2 deals; rebuild from watchlist.</li>
+      <li>Lock next two quarters of conference + roadshow calendar (NYC / Boston / SF / PHL / PIT).</li>
+      <li>Define compensation / SPIFs tied to exclusive wins and stage hygiene — not activity vanity.</li>
+    </ul>
+
+    <div class="callout">
+      <p><strong>Handoff checklist included in repo:</strong> <code>sales-kit/HANDOFF.md</code> · pipeline CSV · target framework CSV · channel calendar CSV · talk-track templates. Open the HTML in a browser; print to PDF for board or manufacturer-safe redacted versions as needed.</p>
+    </div>
+  </section>
+
+  <footer class="doc-foot">
+    <p><strong>Vanscoy Rare Pharmacy</strong> · 310 Merchant Lane, Pittsburgh, PA 15205 · partnerships@vanscoyrare.com · 855-VANSCOY</p>
+    <p>Internal GTM working document. Not for external distribution without executive approval. Figures in the $1B path section are illustrative portfolio math for planning — validate against live WAC, net pricing, and patient forecasts per asset.</p>
+  </footer>
+
+</div>
+</body>
+</html>
