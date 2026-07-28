@@ -2,7 +2,38 @@
 
 Go-to-market operating system for **Vanscoy Rare Pharmacy** (Pittsburgh): how the commercial team sources exclusive / limited-distribution rare therapy business and runs pipeline toward institutional scale.
 
-## Start here
+## Demo on Vercel (shareable link)
+
+### Option A — Fastest (Import Git repo)
+
+1. Go to [vercel.com/new](https://vercel.com/new)
+2. Import **`Pelusi83/VRP`**
+3. Leave Framework Preset as **Other** (static)
+4. Click **Deploy**
+5. Share the URL Vercel gives you (e.g. `https://vrp-xxxx.vercel.app`)
+
+Root `/` opens the sales kit demo automatically.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Pelusi83/VRP)
+
+### Option B — CLI from this repo
+
+```bash
+npm i -g vercel
+vercel login
+vercel          # preview URL
+vercel --prod   # production URL
+```
+
+No build step. Static HTML only (`vercel.json` rewrites `/` → the sales kit).
+
+### Option C — GitHub connected project
+
+In Vercel → Add Project → select this repo → Deploy. Every push to the connected branch gets a new preview URL; `main` gets production.
+
+---
+
+## Start here (local)
 
 Open the handoff package:
 
