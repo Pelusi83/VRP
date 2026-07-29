@@ -4,32 +4,36 @@ Go-to-market operating system for **Vanscoy Rare Pharmacy** (Pittsburgh): how th
 
 ## Demo on Vercel (shareable link)
 
-### Option A — Fastest (Import Git repo)
+The live demo is static HTML at `public/index.html` (served at `/`).
 
-1. Go to [vercel.com/new](https://vercel.com/new)
-2. Import **`Pelusi83/VRP`**
-3. Leave Framework Preset as **Other** (static)
-4. Click **Deploy**
-5. Share the URL Vercel gives you (e.g. `https://vrp-xxxx.vercel.app`)
+**Important:** Production must deploy a branch that includes `public/index.html`. If Vercel is pointed at an empty `main`, you will get a 404.
 
-Root `/` opens the sales kit demo automatically.
+### Option A — Fastest (Import / Redeploy)
+
+1. Go to [vercel.com/new](https://vercel.com/new) **or** open the existing VRP project → **Deployments**
+2. Import / deploy branch **`main`** (after this PR is merged) — or set Production Branch to this PR branch temporarily
+3. Framework Preset: **Other** · Output Directory: leave default / blank (do **not** set a custom empty folder)
+4. Deploy → open the `*.vercel.app` URL (root `/` is the sales kit)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Pelusi83/VRP)
 
 ### Option B — CLI from this repo
 
 ```bash
-npm i -g vercel
-vercel login
-vercel          # preview URL
-vercel --prod   # production URL
+npx vercel login
+npx vercel          # preview URL
+npx vercel --prod   # production URL
 ```
 
-No build step. Static HTML only (`vercel.json` rewrites `/` → the sales kit).
+No build step.
 
-### Option C — GitHub connected project
+### Option C — Fix an existing 404
 
-In Vercel → Add Project → select this repo → Deploy. Every push to the connected branch gets a new preview URL; `main` gets production.
+If the project already exists and shows Vercel’s 404 page:
+
+1. Vercel → Project → **Settings → Git** → Production Branch = `main` (with this code) **or** `cursor/vrp-sales-channel-pipeline-ba0f`
+2. **Settings → General → Build & Development**: Framework = Other, Build Command empty, Output Directory empty
+3. **Deployments → Redeploy** the latest commit that contains `public/index.html`
 
 ---
 

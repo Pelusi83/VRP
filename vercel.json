@@ -2,12 +2,6 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/sales-kit/VRP_Sales_Channel_Pipeline.html"
-    }
-  ],
   "headers": [
     {
       "source": "/(.*)",
