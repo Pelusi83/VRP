@@ -1,0 +1,12 @@
+account_id,lane,priority,manufacturer,asset_or_franchise,indication,development_stage,expected_us_launch_window,network_status,fit_score_1_to_5,primary_buyer_role,known_contacts,owner,exec_sponsor,last_touch_date,next_action,next_action_date,source,notes
+A-001,A Pre-launch exclusive,P1,[Fill],[Fill],[Fill],Phase 3 / NDA,[YYYY-QN],Not locked,,,,"","",,,Research PDUFA calendar,,"FDA / Citeline / conference intel"
+A-002,A Pre-launch exclusive,P1,[Fill],[Fill],[Fill],BLA/NDA submitted,[YYYY-QN],Evaluating SPs,,,,"","",,,Map buying committee,,
+A-003,A Pre-launch exclusive,P2,[Fill],[Fill],[Fill],Phase 3,[YYYY-QN],Unknown,,,,"","",,,Executive intro request,,
+A-004,B Recent approval / limited network,P1,[Fill],[Fill],[Fill],Approved <24mo,[Live],Limited 2-4,,,,"","",,,Find underperformance signals,,
+A-005,B Recent approval / limited network,P2,[Fill],[Fill],[Fill],Approved <24mo,[Live],Exclusive elsewhere,,,,"","",,,Monitor for transition RFP,,
+A-006,C Franchise adjacency (RareMed/ecosystem),P1,[Fill],[Fill],[Fill],Commercial,[Live],Open / hybrid,,,,"","",,,Warm intro via ecosystem,,
+A-007,C Franchise adjacency (RareMed/ecosystem),P2,[Fill],[Fill],[Fill],Pre-commercial,[YYYY-QN],Not locked,,,,"","",,,Coordinate conflict check with RareMed,,
+A-008,D U.S. market entry biotech,P1,[Fill],[Fill],[Fill],Ex-U.S. approved / U.S. filing,[YYYY-QN],Seeking U.S. SP,,,,"","",,,Offer launch consulting lander,,
+A-009,D U.S. market entry biotech,P2,[Fill],[Fill],[Fill],Phase 3,[YYYY-QN],Unknown,,,,"","",,,BIO / WODC meeting target,,
+A-010,A Pre-launch exclusive,P1,Arrowhead Pharmaceuticals,Redemplo (plozasiran) — LIVE WIN,FCS,Commercial,Live,Exclusive — VRP,5,Market Access / Brand,Public win,Account Management,Gordon Vanscoy,,Protect & expand QBR,,Proof point — not prospect; expand franchise adjacency
+A-011,A Pre-launch exclusive,P1,Cycle Pharmaceuticals,VENXXIVA — LIVE WIN,Cystinuria,Commercial,Live,Exclusive — VRP,5,Commercial / Patient Services,Public win,"Account Management","Gordon Vanscoy",,Protect & expand QBR,,"Proof point — not prospect"

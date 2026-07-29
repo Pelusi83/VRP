@@ -1,0 +1,17 @@
+quarter,motion,channel_code,activity,owner,output_kpi,notes
+Q1,Named account blitz,C1,Refresh 100-account book; assign top 25 exec sponsors,Head of Sales,100 owned accounts; 25 sponsored,Before Asembia
+Q1,Conference prep,C2,Build 25-30 Asembia meeting targets with agendas,BD,≥25 confirmed meetings,Pre-book 6-8 weeks out
+Q1,Thought leadership,C4,Publish exclusive distribution / launch readiness brief,Marketing + BD,1 external asset + 50 targeted sends,
+Q1,Trigger watch,C1,Weekly PDUFA / AdCom / orphan approval scan,Strategy + BD,≥8 new S0 adds / month,Automate alerts
+Q2,Asembia Specialty Pharmacy Summit,C2,On-site manufacturer meetings + evening executive dinners,BD + Exec,≥20 S1+ opportunities created,Highest density channel of year
+Q2,BIO International,C2,Emerging biotech + U.S. entry meetings,BD,≥10 Lane D meetings,Focus exclusive intent
+Q2,World Orphan Drug Congress USA,C2,Access + commercial orphan meetings,BD,≥8 S1 meetings,
+Q2,Referral activation,C3,Quarterly advisor outreach (ex-access leaders; consultants),CEO / HoS,≥5 warm intros,
+Q3,NASP Annual Meeting,C2,SP network + manufacturer follow-ups,BD,Advance ≥10 deals one stage,
+Q3,Mid-year pipeline scrub,C1,Kill zombies; re-rank by PDUFA proximity,Head of Sales,<10% aged past stage max,
+Q3,Displacement scan,C5,Collect SP service failure intel; open transition plays,BD + Ops,≥3 Play C opportunities,
+Q4,Close cycle,C1,Contracting sprint on S4-S5 book,BD + Legal,Commit forecast accuracy ±15%,
+Q4,Next-year book build,C1,Rebuild Lane A for +12 to +30 months,Strategy + BD,80+ Lane A assets listed,
+Q4,Roadshow,C2,Boston / NYC / SF / San Diego manufacturer days,Exec + BD,≥16 executive meetings,
+Ongoing,Inbound SLA,C4,partnerships@vanscoyrare.com response,BD ops,<4 business hours,
+Ongoing,Ecosystem partners,C6,3PL / foundation / advisor touchpoints,Strategy,2 partner reviews / quarter,Conflict-check vs RareMed

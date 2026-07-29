@@ -1,0 +1,6 @@
+opportunity_id,manufacturer,asset_name,indication,therapeutic_area,network_type_sought,segment,stage,stage_name,probability,est_us_patients_y1,est_us_patients_peak,therapy_value_band_usd,est_gross_acv_usd,weighted_acv_usd,economic_buyer,champion,competitors,trigger_event,pdufa_or_launch_date,next_step,next_step_date,owner,exec_sponsor,source_channel,at_risk,close_date_forecast,notes
+VRP-2026-001,Example Bio Inc,EXAM-001,Ultra-rare metabolic,Metabolics,Exclusive,S1 Ultra-orphan launch,S2,Solution Design,0.20,120,280,450000,90000000,18000000,Jane Buyer VP Access,John Champion Patient Services,PANTHERx; Orsini,Positive Phase 3,2027-06-15,Clinical deep-dive workshop,2026-08-05,BD Owner,Justin Smerker,C1 Named Account Hunting,false,2026-12-15,Replace with live opportunities; sample row only
+VRP-2026-002,,,,,,,,,,,,S0,Target Identified,0.05,,,,,,,,,,,C1 Named Account Hunting,false,,Blank template row
+VRP-2026-003,,,,,,,,,,,,S0,Target Identified,0.05,,,,,,,,,,,C1 Named Account Hunting,false,,Blank template row
+VRP-2026-004,,,,,,,,,,,,S0,Target Identified,0.05,,,,,,,,,,,C2 Conference,false,,Blank template row
+VRP-2026-005,,,,,,,,,,,,S0,Target Identified,0.05,,,,,,,,,,,C5 Competitive Displacement,false,,Blank template row
